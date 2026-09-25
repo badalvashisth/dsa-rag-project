@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+pydantic
+
+# Vector DB (pinecone-client was renamed to "pinecone" from v5.1.0 onward —
+# installing pinecone-client can pull an old, incompatible API)
+pinecone
+
+# LangChain pieces used by ingestion.py and query.py
+langchain-community
+langchain-text-splitters
+langchain-mistralai
+langchain-pinecone
+langchain-groq
+pypdf
