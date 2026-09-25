@@ -3,14 +3,9 @@ uvicorn[standard]
 python-dotenv
 pydantic
 
-# Vector DB (pinecone-client was renamed to "pinecone" from v5.1.0 onward —
-# installing pinecone-client can pull an old, incompatible API)
+# Vector DB client (pinecone-client was renamed to "pinecone" from v5.1.0)
 pinecone
 
-# LangChain pieces used by ingestion.py and query.py
-langchain-community
-langchain-text-splitters
+# Only what query.py / main.py actually import
 langchain-mistralai
-langchain-pinecone
 langchain-groq
-pypdf
